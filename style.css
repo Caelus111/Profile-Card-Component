@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --darkCyan: hsl(185, 75%, 39%);
+  --veryDarkCyan: hsl(229, 23%, 23%);
+  --darkGrayBlue: hsl(227, 10%, 46%);
+  --lightClr: hsl(0, 0%, 100%);
+  --textClr: hsl(0, 0%, 59%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: var(--darkCyan);
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  line-height: 0.8;
+}
+
+h3 {
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+p {
+  line-height: 1.4;
+  font-size: 1em;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+section {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.img-top {
+    position: absolute;
+    top: -50%;
+    left:0% ;
+}
+
+.img-bottom {
+    position: absolute;
+    bottom: -50%;
+    right:-2% ;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 24em;
+  background-color: var(--lightClr);
+  color: var(--veryDarkCyan);
+  border-radius: 15px;
+  z-index: 100;
+}
+
+.profile-pattern img {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.profile-img {
+  display: flex;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+
+.profile-img img {
+  border-radius: 50%;
+  border: 5px var(--lightClr) solid;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-70%);
+}
+
+.details p {
+  margin-top: 0.4em;
+  font-size: 0.9em;
+  color: var(--darkGrayBlue);
+}
+
+.details span {
+  color: var(--darkGrayBlue);
+  font-weight: normal;
+  margin-left: 0.25em;
+}
+
+.follower-details {
+  border-top: 1px solid rgb(150, 150, 150, 0.3);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5em;
+}
+
+.follower-details p {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1px;
+  font-size: 0.7em;
+  font-weight: normal;
+}
+
+.follower-details p span {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+
+@media (width <= 500px) {
+  
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+}
+
+.img-top {
+    position: absolute;
+    top: -5%;
+    left:-55% ;
+}
+
+.img-bottom {
+    position: absolute;
+    bottom: -5%;
+    right:-55% ;
+}
+
+}
